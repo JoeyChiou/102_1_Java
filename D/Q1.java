@@ -1,13 +1,11 @@
-//請聆聽考試方式，不用做自己出的題目。
 import java.io.*;
-class Team_D
-{
+class qu{
 	public static void main(String[] args){
-    		String input;
-		int s=0;
 	        try{
 		 	BufferedReader txtin = new BufferedReader(new FileReader("question.txt"));
 			PrintWriter txtout = new PrintWriter(new BufferedWriter(new FileWriter("ans.txt")));
+    			String input;
+			int s=0;
 			for(s=0;s<5;s++){
     					int i=0,j=0,k=0,z=0,x=0;
 					input = txtin.readLine();
@@ -20,14 +18,14 @@ class Team_D
 					}
     					for(i=0;str[i]!='\0';i++){
              					if(str[i]=='+'||str[i]=='-'){
-                   					if(x==1){
-                    					ans[s][k]=temp1;
-                    					k++;
-                    					x=0;
+                   					if(x==1){               	//x 判斷之前是否有乘除的運算 若有則優先拿出
+                    					         ans[s][k]=temp1;
+                    					         k++;			//k 用來計算ans陣列目前位置
+                    					         x=0;
              						}                          
              						temp[j]=str[i];
-            						j++;
-             						z+=1;
+            						j++;				//j 判斷temp陣列位置
+             						z+=1;				//z 判斷之前是否有加減的運算
              						if(z==2){
                     						ans[s][k]=temp[j-2];
                      						k++;
@@ -35,7 +33,7 @@ class Team_D
              						}
           					}
           					else if(str[i]=='*'||str[i]=='/'){
-             						if(x==1){
+             						if(x==1){			//x 判斷之前是否有乘除的運算 若有則優先拿出
                     						ans[s][k]=temp1;
                     						k++;
                     						x=0;
@@ -49,11 +47,11 @@ class Team_D
           					}                              
     					}
 
-    					if(x!=0){
+    					if(x!=0){					//將為輸出的乘除運算輸出
          		 			ans[s][k]=temp1;
           					k++;
     					}
-    					if(z==1){
+    					if(z==1){					//將為輸出的加減運算輸出
     						ans[s][k]=temp[j-1];
     					}
     					System.out.println(ans[s]);
