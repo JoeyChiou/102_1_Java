@@ -1,4 +1,3 @@
-//No problem.
 import java.util.Scanner;  
   
 public class TeamL {  

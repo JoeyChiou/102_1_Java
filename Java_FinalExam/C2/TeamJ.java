@@ -1,4 +1,3 @@
-//no problem.
 
 public class TeamJ {  
     public static void main(String[] args){  

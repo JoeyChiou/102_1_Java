@@ -1,4 +1,3 @@
-//請依題目要求作答
 import java.util.*;
 
  

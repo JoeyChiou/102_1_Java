@@ -1,4 +1,3 @@
-//no problem.
 import java.util.*;  
 
 public class TeamE{  

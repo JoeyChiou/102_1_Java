@@ -1,4 +1,3 @@
-//請看清楚題目的要求
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;

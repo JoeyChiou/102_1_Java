@@ -1,4 +1,3 @@
-//依解答來看就沒問題。
 import java.util.Scanner;
 import java.io.*;
 

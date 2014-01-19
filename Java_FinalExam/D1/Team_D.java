@@ -1,4 +1,3 @@
-//請聆聽考試方式，不用做自己出的題目。
 import java.io.*;
 class Team_D
 {

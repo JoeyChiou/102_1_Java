@@ -1,4 +1,3 @@
-//請看清楚題目要求(很可惜)
 import java.util.*;
 import java.io.*; 
 public class TeamL{

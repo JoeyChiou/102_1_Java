@@ -1,4 +1,3 @@
-//當中間有個零的時候，數字就會錯。
 import java.util.*;
 import java.io.*;
 public class TeamE{
@@ -85,3 +84,4 @@ class TURN{
 		return opnumber;
 	}
 }
+

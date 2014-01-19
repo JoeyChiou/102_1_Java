@@ -1,4 +1,3 @@
-//連println()都有問題。
 import java.util.Scanner;
 
 public class C2 {  

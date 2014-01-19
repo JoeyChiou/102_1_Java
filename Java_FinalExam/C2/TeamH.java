@@ -1,5 +1,4 @@
-//no problem.  
-
+  
 public class TeamH {  
     public static void main(String[] args){  
     	TeamH pascal = new TeamH();  
